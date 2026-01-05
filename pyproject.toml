@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ligo-gw-detection"
+version = "0.1.0"
+description = "Neural network pipeline for gravitational wave detection"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "LIGO ML Team", email = "team@example.com"}
+]
+keywords = ["gravitational-waves", "neural-networks", "ligo", "detection"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+
+dependencies = [
+    "numpy>=1.19.0",
+    "scipy>=1.5.0",
+    "torch>=1.9.0",
+    "scikit-learn>=0.24.0",
+    "matplotlib>=3.3.0",
+    "astropy>=4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.12",
+    "black>=21.0",
+    "flake8>=3.9",
+    "mypy>=0.910",
+]
+notebooks = [
+    "jupyter>=1.0",
+    "jupyterlab>=3.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ligo_gw*"]
+
+[tool.black]
+line-length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=ligo_gw"

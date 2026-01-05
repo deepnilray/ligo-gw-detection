@@ -1,0 +1,44 @@
+"""Placeholder for Git initialization and initial commit instructions."""
+
+# Initialize Git repository and create first commit
+
+echo "LIGO GW Detection Pipeline" > .gitignore
+cat >> .gitignore << EOF
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data (optional)
+data/
+*.fits
+*.h5
+
+# Checkpoints
+checkpoints/
+*.pt
+EOF
+
+git init
+git add .
+git commit -m "Commit 1: Initial project setup with package structure"
+git log --oneline -1
