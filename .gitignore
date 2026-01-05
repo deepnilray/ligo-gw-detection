@@ -36,9 +36,12 @@ data/
 # Checkpoints
 checkpoints/
 *.pt
-EOF
 
-git init
-git add .
-git commit -m "Commit 1: Initial project setup with package structure"
-git log --oneline -1
+# LaTeX build artifacts
+papers/*.pdf
+papers/*.aux
+papers/*.log
+papers/*.bbl
+papers/*.blg
+papers/*.out
+papers/compile*.log
