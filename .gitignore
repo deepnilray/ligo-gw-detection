@@ -37,11 +37,7 @@ data/
 checkpoints/
 *.pt
 
-# LaTeX build artifacts
-papers/*.pdf
-papers/*.aux
-papers/*.log
-papers/*.bbl
-papers/*.blg
-papers/*.out
-papers/compile*.log
+# Papers and documentation (keep in local repo only)
+papers/
+*.pdf
+*.tex
