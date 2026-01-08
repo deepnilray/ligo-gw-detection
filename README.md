@@ -245,6 +245,5 @@ Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 ```bibtex
 @article{Ray2026,
   title={Fast Detection of Gravitational Waves with Convolutional Neural Networks},
-  author={Ray, Deepnil},
-  journal={arXiv preprint},
+  author={Ray, Deepnil}
 ```
