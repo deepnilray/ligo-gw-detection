@@ -1,6 +1,6 @@
 # LIGO Gravitational Wave Detection Pipeline
 
-Neural network framework for gravitational wave detection and parameter estimation. Designed for speed: **Week 4 from raw LIGO data to arXiv paper**.
+Neural network framework for gravitational wave detection and parameter estimation. Designed for speed
 
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-red)](https://pytorch.org)
@@ -245,5 +245,5 @@ Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 ```bibtex
 @article{Ray2026,
   title={Fast Detection of Gravitational Waves with Convolutional Neural Networks},
-  author={Ray, Deepnil}
+  author={Ray, Deepnil}}
 ```
